@@ -6,7 +6,7 @@ Feature: reservation cinecolombia
   Scenario: Do a reservation for a movie
     Given that Mari wants to add a movie to the reservation
       | ciudad    | teatro                 | fecha | pelicula     |
-      | /medellin | /cine-colombia-molinos |     3 | glass |
+      | /medellin | /cine-colombia-molinos |     4 | glass |
     When she do the reservation
       | usuario                     | clave      | pago   | silla |
       | marisellarestrepo@gmail.com | prueba1234 | master | 4b    |
