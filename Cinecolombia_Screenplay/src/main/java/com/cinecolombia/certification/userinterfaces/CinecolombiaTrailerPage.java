@@ -6,6 +6,6 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class CinecolombiaTrailerPage extends PageObject{
 	
-	public static final Target CINECOLOMBIA_MOVIE = Target.the("Movie´s name").locatedBy("//img[contains(@title,'{0}')]");
+	public static final Target CINECOLOMBIA_MOVIE = Target.the("Movie´s name").locatedBy("//img[@title='{0}']");
 
-}
+} 

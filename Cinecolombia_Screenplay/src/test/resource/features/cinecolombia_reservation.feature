@@ -6,10 +6,12 @@ Feature: reservation cinecolombia
   Scenario: Do a reservation for a movie
     Given that Mari wants to add a movie to the reservation
       | ciudad    | teatro                 | fecha | pelicula     |
-      | /medellin | /cine-colombia-molinos |     7 | wifi-ralph |
+      | /medellin | /cine-colombia-molinos |     3 | glass |
     When she do the reservation
       | usuario                     | clave      | pago   | silla |
       | marisellarestrepo@gmail.com | prueba1234 | master | 4b    |
     Then she should see the movie in the reservation
 			|triler|
-			|WIFI RALPH - CINE COLOMBIA|
+			|GLASS|
+			
+			

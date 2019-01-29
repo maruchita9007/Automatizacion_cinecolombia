@@ -20,6 +20,7 @@ public class SelectThe implements Task{
 				SelectFromOptions.byValue((String) movie.get(4)).from(CinecolombiaSelectMoviePage.CINECOLOMBIA_SELECT_CITY),
 				//Click.on(CinecolombiaSelectMoviePage.CINECOLOMBIA_POPUP),
 				SelectFromOptions.byValue((String) movie.get(5)).from(CinecolombiaSelectMoviePage.CINECOLOMBIA_SELECT_THEATRE),
+				Click.on(CinecolombiaSelectMoviePage.CINECOLOMBIA_COOKIE),
 				Click.on(CinecolombiaSelectMoviePage.CINECOLOMBIA_SELECT_CALENDAR),
 				Click.on(CinecolombiaSelectMoviePage.CINECOLOMBIA_SELECT_DATE.of((String) movie.get(6))),
 				Click.on(CinecolombiaSelectMoviePage.CINECOLOMBIA_SELECT_MOVIE.of((String) movie.get(7)))

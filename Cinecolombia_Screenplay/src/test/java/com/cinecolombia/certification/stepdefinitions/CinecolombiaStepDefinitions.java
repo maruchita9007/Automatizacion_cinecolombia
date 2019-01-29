@@ -29,6 +29,7 @@ public class CinecolombiaStepDefinitions {
 	@Before
 	public void setUp() {
 		mari.can(BrowseTheWeb.with(herBrowser));
+		herBrowser.manage().window().maximize(); 
 	}
 	
 	@Given("^that Mari wants to add a movie to the reservation$")
@@ -44,8 +45,9 @@ public class CinecolombiaStepDefinitions {
 
 
 	@Then("^she should see the movie in the reservation$")
-	public void she_should_see_the_movie_in_the_reservation(List<String> data) {
-		mari.should(seeThat(CinecolombiaMovieResult.page(data)));
+	public void she_should_see_the_movie_in_the_reservation(List<String> trailer) {
+		mari.should(seeThat(CinecolombiaMovieResult.page(trailer)));
+		
 	}
 	
 }
